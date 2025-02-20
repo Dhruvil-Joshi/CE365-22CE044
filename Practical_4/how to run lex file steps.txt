@@ -1,0 +1,3 @@
+flex file.l
+gcc lex.yy.c -o outputname
+outputname
