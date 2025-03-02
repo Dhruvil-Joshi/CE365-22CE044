@@ -477,9 +477,9 @@ static char *yy_last_accepting_cpos;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "lexical.l"
+#line 1 "lexical_with_syntax_analysis.l"
 #define INITIAL 0
-#line 3 "lexical.l"
+#line 3 "lexical_with_syntax_analysis.l"
   #include <stdio.h>
 #line 485 "lex.yy.c"
 
@@ -632,7 +632,7 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
 
-#line 6 "lexical.l"
+#line 6 "lexical_with_syntax_analysis.l"
 
 #line 638 "lex.yy.c"
 
@@ -719,77 +719,77 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 7 "lexical.l"
+#line 7 "lexical_with_syntax_analysis.l"
 ;
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 9 "lexical.l"
+#line 9 "lexical_with_syntax_analysis.l"
 ;
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 11 "lexical.l"
+#line 11 "lexical_with_syntax_analysis.l"
 ;
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 13 "lexical.l"
+#line 13 "lexical_with_syntax_analysis.l"
 { printf("String: %s\n", yytext); }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 15 "lexical.l"
+#line 15 "lexical_with_syntax_analysis.l"
 { printf("Character Constant: %s\n", yytext); }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 17 "lexical.l"
+#line 17 "lexical_with_syntax_analysis.l"
 { printf("Keyword: %s\n", yytext); }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 19 "lexical.l"
+#line 19 "lexical_with_syntax_analysis.l"
 { printf("Identifier: %s\n", yytext); }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 22 "lexical.l"
+#line 22 "lexical_with_syntax_analysis.l"
 { printf("Operator: %s\n", yytext); }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 24 "lexical.l"
+#line 24 "lexical_with_syntax_analysis.l"
 { printf("Punctuation: %s\n", yytext); }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 26 "lexical.l"
+#line 26 "lexical_with_syntax_analysis.l"
 {printf("Real Constant: %s\n", yytext);}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 28 "lexical.l"
+#line 28 "lexical_with_syntax_analysis.l"
 {printf("Unkown Token: %s\n", yytext);}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 30 "lexical.l"
+#line 30 "lexical_with_syntax_analysis.l"
 {printf("Integer Constant: %s\n", yytext);}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 32 "lexical.l"
+#line 32 "lexical_with_syntax_analysis.l"
 {printf("Unkown Token: %s\n", yytext);}
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 34 "lexical.l"
+#line 34 "lexical_with_syntax_analysis.l"
 ;
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 36 "lexical.l"
+#line 36 "lexical_with_syntax_analysis.l"
 ECHO;
 	YY_BREAK
 #line 796 "lex.yy.c"
@@ -1678,7 +1678,7 @@ int main()
 	return 0;
 	}
 #endif
-#line 36 "lexical.l"
+#line 36 "lexical_with_syntax_analysis.l"
 
 int main() {
     yyin=fopen("demo.c","r");

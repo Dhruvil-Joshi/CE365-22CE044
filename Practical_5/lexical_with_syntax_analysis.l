@@ -10,7 +10,7 @@
 
 [ \t\n]+ ;
 
-"\"".*"\"" { printf("String: %s\n", yytext); }
+\".*\" { printf("String: %s\n", yytext); }
 
 '[a-zA-Z0-9\_]' { printf("Character Constant: %s\n", yytext); }
 
